@@ -59,6 +59,50 @@
     </div>
 </div>
 <div class="container">
+    <div class="read-top">
+        <div>
+            <div class="select-item">
+                <span>
+                    Bölüm
+                    <em class = "fas fa-angle-down"></em>
+                </span>
+                <select name="" id="">
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                </select>
+            </div>
+            <div class="select-item">
+                <span>
+                    Sayfalar
+                    <em class = "fas fa-angle-down"></em>
+                </span>
+                <select name="" id="">
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                    <option value="">Bölüm 1</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="select-item">
+                <a>
+                    <em class = "fas fa-angle-left"></em>
+                    Önceki
+                </a>
+            </div>
+            <div class="select-item">
+                <a>
+                    Sonraki
+                    <em class = "fas fa-angle-right"></em>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="loading-spin"></div>
     <div class="read-sec">
         <div class="image">
@@ -99,6 +143,9 @@
         </div>
     </div>
 </div>
+<div class="arrow-up">
+    <em class = "fas fa-angle-up"></em>
+</div>
 <script type="text/javascript">
     $( function(){
         $( window ).on( "load", function(){
@@ -106,6 +153,18 @@
                 $( ".loading-spin" ).remove();
                 $( ".read-sec" ).addClass( "active" );
             }, 1000)
+        });
+        $( window ).on( "scroll", function(){
+            if( $( this ).scrollTop() > 200 ){
+                $( ".arrow-up" ).addClass( "active" );
+            }else{
+                $( ".arrow-up" ).removeClass( "active" );
+            }
+        });
+        $( ".arrow-up" ).click( function(){
+            $( "html, body" ).animate({
+                scrollTop: 0
+            })
         });
     });
 </script>

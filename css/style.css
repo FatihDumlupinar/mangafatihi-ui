@@ -1366,6 +1366,75 @@ body {
   animation:spin 1s linear infinite;
 }
 
+.read-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  margin-bottom: 0;
+}
+
+.read-top .select-item {
+  position: relative;
+}
+
+.read-top > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+.read-top .select-item span , .read-top .select-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  padding: 10px;
+  background: #1e2029;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.read-top .select-item a {
+  justify-content: center;
+  gap: 10px;
+}
+
+.read-top .select-item  select {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.arrow-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #42e3d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 100%;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.arrow-up.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 @-moz-keyframes spin { 
   100% { -moz-transform: rotate(360deg); } 
 }
