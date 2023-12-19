@@ -58,63 +58,20 @@
         </div>
     </div>
 </div>
-
 <div class="container">
-    <div class="form-sec">
-        <div class="title-sec">GİRİŞ YAP</div>
-        <div class="form-item">
-            <span>E-Posta</span>
-            <input type="text" name="" id="">
-        </div>
-        <div class="form-item">
-            <span>Şifre</span>
-            <div class="password">
-                <input type="password" name="" id="">
-                <span class="ab-icon">
-                    <em class = "fas fa-eye"></em>
-                </span>
-            </div>
-        </div>
-        <div class="form-item">
-            <span>Şifre Tekrar</span>
-            <div class="password">
-                <input type="password" name="" id="">
-                <span class="ab-icon">
-                    <em class = "fas fa-eye"></em>
-                </span>
-            </div>
-        </div>
-        <div class="form-item">
-            <div class="checkbox-w">
-                <input type="checkbox" checked name="">
-                <p>
-                    <em class = "fas fa-check"></em>
-                </p>
-                Beni Hatırla
-            </div>
-            
-        </div>
-        <p class="notice">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, quisquam numquam laborum facere expedita nobis.</p>
-        <div class="form-item">
-            <button>Giriş Yap <em class = "fas fa-arrow-right"></em></button>
-        </div>
-        <div class="form-item">
-            <div class="social-login-buttons">
-                <a class = "facebook" href="">
-                    <em class = "fab fa-facebook"></em>
-                    Facebook ile giriş yap
-                    <em class = "fas fa-arrow-right"></em>
-                </a>
-                <a class = "google" href="">
-                    <em class = "fab fa-google"></em>
-                    Google ile giriş yap
-                    <em class = "fas fa-arrow-right"></em>
-                </a>
-            </div>
+    <div class="loading-spin"></div>
+    <div class="read-sec full">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1682686580922-2e594f8bdaa7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
         </div>
     </div>
 </div>
-
 <div class="footer-sec">
     <div class="container">
         <div class="c">
@@ -144,12 +101,11 @@
 </div>
 <script type="text/javascript">
     $( function(){
-        $( ".ab-icon" ).on( "click", function(){
-            if( $( this ).parent().find( "input" ).attr( "type" ) == "text" ){
-                $( this ).parent().find( "input" ).attr( "type", "password" )
-            }else{
-                $( this ).parent().find( "input" ).attr( "type", "text" );
-            }
+        $( window ).on( "load", function(){
+            setTimeout( () => {
+                $( ".loading-spin" ).remove();
+                $( ".read-sec" ).addClass( "active" );
+            }, 1000)
         });
     });
 </script>

@@ -14,6 +14,26 @@
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<div class="system-popup">
+    <div class="c">
+        <div class="p-title">
+            <span>Oy Ver</span>
+            <span>
+                <em class = "fas fa-times"></em>
+            </span>
+        </div>
+        <div class="star-desc">
+            Bu seriye kaç puan vermek istiyorsunuz?
+        </div>
+        <div class="star">
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+        </div>
+    </div>
+</div>
 <div class="menu-popup">
     <a class = "close-p" href="javascript:void(0);"> <em class = "fas fa-arrow-left"></em> Geri Dön</a>
     <a href=""> <em class = "fas fa-user"></em> Giriş Yap</a>
@@ -90,6 +110,9 @@
                     <div class="bg-div">
                         <span>Tür</span>
                         <span>Manhwa</span>
+                    </div>
+                    <div class="give-star">
+                        Oy Ver <em class = "fas fa-arrow-right"></em>
                     </div>
                 </div>
                 <div class="top-2-sec">
@@ -402,5 +425,30 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $( function(){
+        $( ".give-star" ).click( function(){
+            $( ".system-popup" ).addClass( "active" );
+        });
+        $( ".p-title span:eq(1)" ).click( function(){
+            $( ".system-popup" ).removeClass( "active" );
+        });
+        $( ".star em" ).hover( function(){
+            var _index = $( this ).index();
+            $( ".star em" ).removeClass( "active" );
+            for( let _i = 0; _i <= _index; _i++ ){
+                $( ".star em" ).eq(_i).addClass( "active" );
+            }
+        });
+        $( ".star em" ).click( function(){
+            var _index = $( this ).index();
+            $( ".star em" ).removeClass( "active" );
+            for( let _i = 0; _i <= _index; _i++ ){
+                $( ".star em" ).eq(_i).addClass( "active" );
+            }
+            alert( "Oy kullanımı başarılı" );
+        });
+    });
+</script>
 </body>
 </html>

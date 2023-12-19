@@ -14,6 +14,26 @@
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<div class="system-popup">
+    <div class="c">
+        <div class="p-title">
+            <span>Oy Ver</span>
+            <span>
+                <em class = "fas fa-times"></em>
+            </span>
+        </div>
+        <div class="star-desc">
+            Bu seriye kaç puan vermek istiyorsunuz?
+        </div>
+        <div class="star">
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+            <em class = "fas fa-star"></em>
+        </div>
+    </div>
+</div>
 <div class="menu-popup">
     <a class = "close-p" href="javascript:void(0);"> <em class = "fas fa-arrow-left"></em> Geri Dön</a>
     <a href=""> <em class = "fas fa-user"></em> Giriş Yap</a>
@@ -58,63 +78,23 @@
         </div>
     </div>
 </div>
-
 <div class="container">
-    <div class="form-sec">
-        <div class="title-sec">GİRİŞ YAP</div>
-        <div class="form-item">
-            <span>E-Posta</span>
-            <input type="text" name="" id="">
-        </div>
-        <div class="form-item">
-            <span>Şifre</span>
-            <div class="password">
-                <input type="password" name="" id="">
-                <span class="ab-icon">
-                    <em class = "fas fa-eye"></em>
-                </span>
-            </div>
-        </div>
-        <div class="form-item">
-            <span>Şifre Tekrar</span>
-            <div class="password">
-                <input type="password" name="" id="">
-                <span class="ab-icon">
-                    <em class = "fas fa-eye"></em>
-                </span>
-            </div>
-        </div>
-        <div class="form-item">
-            <div class="checkbox-w">
-                <input type="checkbox" checked name="">
-                <p>
-                    <em class = "fas fa-check"></em>
-                </p>
-                Beni Hatırla
-            </div>
-            
-        </div>
-        <p class="notice">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, quisquam numquam laborum facere expedita nobis.</p>
-        <div class="form-item">
-            <button>Giriş Yap <em class = "fas fa-arrow-right"></em></button>
-        </div>
-        <div class="form-item">
-            <div class="social-login-buttons">
-                <a class = "facebook" href="">
-                    <em class = "fab fa-facebook"></em>
-                    Facebook ile giriş yap
-                    <em class = "fas fa-arrow-right"></em>
-                </a>
-                <a class = "google" href="">
-                    <em class = "fab fa-google"></em>
-                    Google ile giriş yap
-                    <em class = "fas fa-arrow-right"></em>
-                </a>
-            </div>
+    <div class="page-desc">
+        <div class="title">Gizlilik</div>
+        <div class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis quisquam deleniti voluptatibus accusamus a exercitationem error optio adipisci? Aspernatur veniam asperiores alias quaerat blanditiis ipsam fugiat, laudantium deserunt nulla!
+            Alias exercitationem quas inventore optio delectus commodi quo. Dolore adipisci provident perferendis mollitia soluta omnis ipsa facere, nesciunt voluptate nihil itaque, consequuntur aliquam laboriosam perspiciatis. Adipisci exercitationem beatae quisquam optio.
+            Laudantium non beatae esse minima eligendi asperiores excepturi debitis consequatur aut, distinctio ad incidunt vitae odit possimus consequuntur voluptates ab ex quod, numquam dolorem voluptate explicabo! Asperiores assumenda aut fugiat.
+            Nemo delectus eum cumque ad hic facilis molestiae sint provident aliquam similique? Ducimus a provident blanditiis laboriosam nulla consectetur fuga, est ipsam minima totam tenetur ad repellendus eaque quo neque!
+            Quam, optio expedita possimus, quasi voluptatum deserunt corrupti dolore exercitationem qui eos minus cum vitae. Ullam cupiditate, sunt ad eveniet vero quam architecto consectetur, nam quisquam necessitatibus facere vel numquam!
+            Dignissimos laborum earum dolores, et omnis nulla, maiores eos a, iusto temporibus odit officiis molestiae consequatur sapiente labore animi qui eum nesciunt eligendi harum minima necessitatibus cupiditate veritatis repudiandae. Facilis.
+            Explicabo, asperiores saepe quo animi doloribus voluptate aut voluptatem enim adipisci, iure laborum? Accusantium exercitationem placeat deserunt voluptate ut temporibus autem. Quam iste tempora excepturi magnam dolor omnis tenetur expedita.
+            Delectus molestiae deserunt aperiam eos, tempore illum dolores cum beatae ipsam. Repellendus quam officiis voluptates in cumque hic et nobis impedit, soluta facere. Quos fuga, sunt asperiores sed ullam eos!
+            Labore autem, sapiente velit officia eveniet reprehenderit enim accusantium asperiores aliquid iure fuga aliquam nulla quas voluptas fugit nemo consequuntur alias repellat perferendis amet. Odit est dolorum id perferendis reprehenderit.
+            Fuga, laborum! Architecto quia non minima blanditiis quibusdam accusamus fuga? Nihil numquam soluta possimus recusandae saepe vel, harum dicta voluptas amet eligendi debitis autem. Debitis accusantium magni neque repellat perspiciatis?
         </div>
     </div>
 </div>
-
 <div class="footer-sec">
     <div class="container">
         <div class="c">
@@ -142,16 +122,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $( function(){
-        $( ".ab-icon" ).on( "click", function(){
-            if( $( this ).parent().find( "input" ).attr( "type" ) == "text" ){
-                $( this ).parent().find( "input" ).attr( "type", "password" )
-            }else{
-                $( this ).parent().find( "input" ).attr( "type", "text" );
-            }
-        });
-    });
-</script>
 </body>
 </html>

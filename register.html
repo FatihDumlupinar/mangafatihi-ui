@@ -67,20 +67,59 @@
             <input type="text" name="" id="">
         </div>
         <div class="form-item">
-            <span>Ad ve Soyad</span>
+            <span>Kullanıcı Adı</span>
             <input type="text" name="" id="">
         </div>
         <div class="form-item">
-            <span>Ad ve Soyad</span>
+            <span>E-Posta</span>
             <input type="text" name="" id="">
         </div>
         <div class="form-item">
-            <span>Ad ve Soyad</span>
-            <input type="text" name="" id="">
+            <span>Şifre</span>
+            <div class="password">
+                <input type="password" name="" id="">
+                <span class="ab-icon">
+                    <em class = "fas fa-eye"></em>
+                </span>
+            </div>
+        </div>
+        <div class="form-item">
+            <span>Şifre Tekrar</span>
+            <div class="password">
+                <input type="password" name="" id="">
+                <span class="ab-icon">
+                    <em class = "fas fa-eye"></em>
+                </span>
+            </div>
+        </div>
+        <div class="form-item">
+            <span>Doğum Tarihi</span>
+            <input type="date" name="" id="">
+        </div>
+        <div class="form-item">
+            <span>Cinsiyet</span>
+            <select name="" id="">
+                <option value="">Erkek</option>
+                <option value="">Kadın</option>
+            </select>
         </div>
         <p class="notice">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, quisquam numquam laborum facere expedita nobis.</p>
         <div class="form-item">
             <button>Kayıt Ol <em class = "fas fa-arrow-right"></em></button>
+        </div>
+        <div class="form-item">
+            <div class="social-login-buttons">
+                <a class = "facebook" href="">
+                    <em class = "fab fa-facebook"></em>
+                    Facebook ile giriş yap
+                    <em class = "fas fa-arrow-right"></em>
+                </a>
+                <a class = "google" href="">
+                    <em class = "fab fa-google"></em>
+                    Google ile giriş yap
+                    <em class = "fas fa-arrow-right"></em>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -112,5 +151,16 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $( function(){
+        $( ".ab-icon" ).on( "click", function(){
+            if( $( this ).parent().find( "input" ).attr( "type" ) == "text" ){
+                $( this ).parent().find( "input" ).attr( "type", "password" )
+            }else{
+                $( this ).parent().find( "input" ).attr( "type", "text" );
+            }
+        });
+    });
+</script>
 </body>
 </html>
