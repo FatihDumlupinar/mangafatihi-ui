@@ -399,6 +399,7 @@ html, body {
 .last-items-list .hover-content .sec-1 {
     color: #000;
     font-size: 14px;
+    font-weight: bold;
     padding: 7px;
 }
 
