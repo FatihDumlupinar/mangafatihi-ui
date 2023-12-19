@@ -1,0 +1,55 @@
+Anasayfa -
+
+-. Sağ taraftaki Popüler Seriler bölümünü nav-tabs şeklinde olsun, bütün sıralamarı sayfaya göndereceğim kullanıcı bu ay veya tüm zamanları seçince diğer sıralamayı göstersin.
+
+-. Arama yapılacak yerde bazı değişiklikler yapılacak:
+---içi koyu renkte olacak. placeholder açık gri olacak.
+---inputta odaklanıldığında hemen altında bir kutu çıksın.
+---kullanıcı yazı yazdıktan sonra o yazı ile alakalı seriler çıkacak.
+---Bu listede serilerin gösterileceği şeyler: Profil resmi, başlığı, puanı
+---bu listenin en altında detaylı arama için bir buton olacak ve bu buton seri arama sayfasına yönlendirilecek.
+
+Login
+
+-. Şifre Tekrar inputun yerine beni hatırla checkbox ı koyulacak.
+-. Google ve Facebook ile giriş butonu eklenecek giriş yap butonun altına 
+-. Şifre girilirken karakter gizlenecek ve hemen inputun sağına bir göz iconu koyulacak eğer kullanıcı bu icon a basarsa gizlenmiş karakter tekrar açılacak (tipik göster/gizle butonu)
+
+Register
+
+-. bu sayfada olacak olan alanlar: Ad soyad, kullanıcı adı, eposta, şifre, Doğum Tarihi, Cinsiyet
+-. Bu sayfada da google ve facebook giriş butonu olacak, kayıt ol butonun hemen aşağısında
+
+Series
+
+-. Arama alanı: 
+---Kategorilere göre arama (Selectbox multiselect)
+---Yazarlara göre arama (Selectbox multiselect)
+---Sanatçılara göre arama (Selectbox multiselect)
+---Yayın Tarihi (input range olacak, sadece yıl, başlangıç min 2000, bitiş max 2024)
+---Seri adına göre arama (input sadece)
+tasarımlar sayfa ile uyumlu olsun.
+
+-. Listeleme alanı; 
+serileri satır satır listelenecek, 1 satırda sadece 1 seri olacak, alanları :
+---Profil resmi, başlık, puan, kategorileri, kısa özet hikayesi, en son bölümünü (numarası ile beraber örn: 99.Bölüm)
+
+Series Profil
+
+-. Oy ver butonu eklenecek, butona basılınca oy vermesi için bir modal açılacak, oyu verirken bir kütüphane kullanılabilir, 5 yıldız üzerinde oy verilecek
+
+Series Read 
+
+-. sayfa basit sadece resimler alt alta listelenecek, bir de yapılabilirse sayfalama mantığıyla resimler listelensin, resimler arasında hiç boşluk olmasın
+-. Resim sayfada gösterilene kadar loading img si açık olsun, amaç resim sayfada gösterilmediğinde altaki resim yukarı gelince sıra bozuluyor, bunu önlemek için
+
+---------------------------------------------------------------------------
+Basit tasarımlarla 3 sayfa daha yazılacak
+-Hakkımızda
+--üst navbar aynı kalsın altında hakkımızda yazısı yazılacak
+
+-iletişim
+--iletişim paneli olacak(direkt sayfaya feedback bunun görevi), yanında sayfanın eposta adresi iletisim@mangafatihi.com
+
+-Gizlilik
+--hakkımızda sayfası benzeri olacak
